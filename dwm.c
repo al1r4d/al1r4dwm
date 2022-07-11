@@ -130,6 +130,7 @@ struct Monitor {
 	int showtab;
 	int topbar;
 	int toptab;
+	int setborderpx;
 	Client *clients;
 	Client *sel;
 	Client *stack;
@@ -679,6 +680,7 @@ createmon(void)
 	m->showbar = showbar;
 	m->showtab = showtab;
 	m->topbar = topbar;
+	
 	m->toptab = toptab;
 	m->ntabs = 0;
 	m->lt[0] = &layouts[0];
