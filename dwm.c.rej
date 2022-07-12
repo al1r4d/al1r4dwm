@@ -1,10 +1,10 @@
---- dwm.c	2020-05-14 00:17:35.047919771 +0200
-+++ dwm.c	2020-05-12 02:17:20.070933833 +0200
-@@ -638,7 +636,6 @@ createmon(void)
+--- dwm.c
++++ dwm.c
+@@ -727,6 +729,7 @@ createmon(void)
  	m->nmaster = nmaster;
  	m->showbar = showbar;
  	m->topbar = topbar;
--	m->borderpx = borderpx;
++	m->ltcur = 0;
  	m->lt[0] = &layouts[0];
  	m->lt[1] = &layouts[1 % LENGTH(layouts)];
  	strncpy(m->ltsymbol, layouts[0].symbol, sizeof m->ltsymbol);
